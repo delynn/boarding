@@ -75,7 +75,7 @@ Thanks to [spaceship.airforce](https://spaceship.airforce) (oh well, I really ta
 
 Assuming you already have a [Heroku](https://www.heroku.com/) account follow those steps:
 
-- [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://www.heroku.com/deploy?template=https://github.com/fastlane/boarding)
+- [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://www.heroku.com/deploy?template=https://github.com/delynn/boarding/tree/two-factor)
 - Enter your iTunes Connect credentials and the bundle identifier of your app. This will all be stored on your own Heroku instance as environment variables
 - Click on `View` once the setup is complete and start sharing the URL
 
@@ -89,7 +89,8 @@ Heroku is free to use for the standard machine. If you need a Heroku account, as
 
 ---
 
-If your account is protected using 2-factor author, follow the [2 step verification guide](https://github.com/fastlane/fastlane/blob/master/spaceship/README.md#2-step-verification).
+If your account is protected using 2-factor author, follow the [2 step verification guide](https://github.com/fastlane/fastlane/blob/master/spaceship/README.md#2-step-verification),
+and set the `FASTLANE_SESSION` environment variable accordingly.
 
 ## Security
 
@@ -112,6 +113,8 @@ To secure your webpage, you only have to set the `ITC_TOKEN` environment variabl
 - `RESTRICTED_DOMAIN` Set this domain (in the format `domain.com`) to restrict users with emails in another domain from signing up. This list supports multiple domains by setting it to a comma delimited list (`domain1.com,domain2.com`)
 - `FASTLANE_ITC_TEAM_NAME` If you're in multiple teams, enter the name of your iTC team here. Make sure it matches.
 - `IMPRINT_URL` If you want a link to an imprint to be shown on the invite page.
+- `FASTLANE_SESSION` If your account is protected using 2-factor author, follow the [2 step verification guide](https://github.com/fastlane/fastlane/blob/master/spaceship/README.md#2-step-verification),
+and use this environment variable accordingly.
 
 ## Custom Domain
 

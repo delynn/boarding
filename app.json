@@ -37,6 +37,10 @@
     "IMPRINT_URL": {
       "description": "Optional: URL to imprint. The link is shown on the invite page.",
       "required": false
+    },
+    "FASTLANE_SESSION": {
+      "description": "Optional: The session cookie to use if you have two-factor authentication enabled on your Apple ID",
+      "required": false
     }
   }
 }
